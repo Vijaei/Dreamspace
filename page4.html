@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<!--refrenced https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial-->
+<head>  
+<style>
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background-size: 200px;
+  background-color: white;
+  font-family: "Courier New";
+  font-size: 1.2em;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.one {
+  background: url("background/forest4%20inverse%20empty.png");
+  background-size: auto 100vh; min-height: 20%;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+.two {
+  background: url("background/forest4%20inverse%20empty.png");
+  background-size: auto 100vh; min-height: 20%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-color: white;
+}
+.three {
+  background: url("background/forest4%20inverse%20empty.png");
+  background-size: auto 100vh; min-height: 20%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-color: white;
+}
+.four {
+  background: url("background/forest4%20inverse%20empty.png");
+  background-size: auto 100vh; min-height: 20%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-color: white;
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display:none;
+}
+        
+#logo
+{ 
+  max-width: 70vw;
+  width: auto;
+  height: auto;
+  max-height: 100vh;
+  transform: rotate(180deg)
+}
+    
+#darkdeer
+{ position: absolute; left:6%; top:40%;
+  display: block;
+  max-width: 138px;
+  max-height: 107px;
+}
+    
+#darkbeaver
+{ position: absolute; left:36%; top:40%;
+  display: block;
+  max-width: 138px;
+  max-height: 107px; 
+}
+
+#darkowl
+{ position: absolute; left:60%; top:75%;
+  display: block;
+  max-width: 138px;
+  max-height: 107px; 
+}
+    
+#darkbird
+{ position: absolute; left:90%; top:10%;
+  display: block;
+  max-width: 138px;
+  max-height: 107px; 
+}
+
+a.p1
+{ position: absolute; left:4%; top:75%;
+  display: block;
+  z-index: 1;  
+}
+    
+a.p2
+{ position: absolute; left:36%; top:15%;
+  display: block;
+  z-index: 1;  
+}
+
+a.p3
+{ position: absolute; left:60%; top:20%;
+  display: block;
+  z-index: 1;  
+}
+
+a.p4
+{ position: absolute; left:80%; top:75%;
+  display: block;
+  z-index: 1;  
+}
+    
+a
+{font-family: "Courier New";
+ font-size: 1.5em;
+ font-weight: bolder;
+}
+    
+</style>
+</head>
+  
+<body>
+    <div class="outer-wrapper">
+    <div class="wrapper">
+        
+    <div id="banner">
+    <img src="background/inversewanderinginthefamiliarunfamiliar.png" id="logo"/>
+    </div>
+        
+    <div class="slide one">
+    <a class=p1 style="color:darkcyan" > <pre>Should I keep wandering?</pre></a>    
+    </div>
+    <div class="slide two">
+    <a class=p2 style="color:lightcoral" > <pre>I should get out of here</pre></a> 
+    </div>
+    <div class="slide three">
+    <a class=p3 style="color:red" > <pre>I'm mixing fantasy and reality</pre></a>
+    </div>
+    <div class="slide four">
+    <a class=p4 style="color:blue" > <pre>This place doesn't end</pre></a>
+    </div>
+    <div id="#darkanimals">
+    
+    <a href="index.html">
+    <img id="darkdeer" src="weird animals/dark deer.png"/></a>
+    
+   
+    <a href="page2.html">
+    <img id="darkbeaver" src="weird animals/dark beaver.png"/></a>
+    
+    
+    <a href="page3.html">
+    <img id="darkowl" src="weird animals/dark owl.png"/></a>
+
+    <a href="page4.html">
+    <img id="darkbird" src="weird animals/dark bird.png"/></a>
+    
+    
+    </div>
+    </div>
+    </div>
+      
+    
+</body>
+</html>

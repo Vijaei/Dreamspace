@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<!--refrenced https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial-->
+<head>  
+<style>
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background-size: 200px;
+  background-color: white;
+  font-family: "Courier New";
+  font-size: 1.2em;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.one {
+  background: url("background/forest2 empty.png");
+  background-size: auto 100vh; min-height: 20%;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+.two {
+  background: url("background/forest2%20empty.png");
+  background-size: auto 100vh; min-height: 20%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-color: white;
+}
+.three {
+  background: url("background/forest2%20empty.png");
+  background-size: auto 100vh; min-height: 20%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-color: white;
+}
+.four {
+  background: url("background/forest2%20empty.png");
+  background-size: auto 100vh; min-height: 20%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-color: white;
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display:none;
+}
+        
+#logo
+{ 
+  max-width: 70vw;
+  width: auto;
+  height: auto;
+  max-height: 100vh;
+  transform: rotate(180deg)
+}
+    
+#reddeer
+{ position: absolute; left:10%; top:15%;
+  display: block;
+  max-width: 98px;
+  max-height: 67px;
+}
+    
+#greenbeaver
+{ position: absolute; left:40%; top:70%;
+  display: block;
+  max-width: 98px;
+  max-height: 67px; 
+}
+
+#blueowl
+{ position: absolute; left:60%; top:5%;
+  display: block;
+  max-width: 98px;
+  max-height: 67px; 
+}
+    
+#orangebird
+{ position: absolute; left:85%; top:50%;
+  display: block;
+  max-width: 98px;
+  max-height: 67px; 
+}
+
+a.p1
+{ position: absolute; left:10%; top:30%;
+  display: block;
+  z-index: 1;  
+}
+    
+a.p2
+{ position: absolute; left:40%; top:60%;
+  display: block;
+  z-index: 1;  
+}
+
+a.p3
+{ position: absolute; left:60%; top:15%;
+  display: block;
+  z-index: 1;  
+}
+
+a.p4
+{ position: absolute; left:85%; top:35%;
+  display: block;
+  z-index: 1;  
+}
+    
+a
+{font-family: "Courier New";
+ font-size: 1.8em;
+}
+
+</style>
+</head>
+  
+<body>
+    <div class="outer-wrapper">
+    <div class="wrapper">
+        
+    <div id="banner">
+    <img src="background/wanderinginthefamiliarunfamiliar.png" id="logo"/>
+    </div>
+        
+    <div class="slide one">
+    <a class=p1 style="color:red" > <pre>This place looks familiar but feels strange</pre></a>    
+    </div>
+    <div class="slide two">
+    <a class=p2 style="color:green" > <pre>Is this based on a memory?</pre></a> 
+    </div>
+    <div class="slide three">
+    <a class=p3 style="color:blue" > <pre>Where am I going?</pre></a>
+    </div>
+    <div class="slide four">
+    <a class=p4 style="color:orange" > <pre>Something feels off</pre></a>
+    </div>
+    <div id="#animals">
+    
+    <a href="page4.html">
+    <img id="reddeer" src="animals/red%20deer.png"/></a>
+    
+   
+    <a href="index.html">
+    <img id="greenbeaver" src="animals/green%20beaver.png"/></a>
+    
+    
+    <a href="page3.html">
+    <img id="blueowl" src="animals/blue%20owl.png"/></a>
+
+    <a href="page2.html">
+    <img id="orangebird" src="animals/orange%20bird.png"/></a>
+    
+    
+    </div>
+    </div>
+    </div>
+      
+    
+</body>
+</html>

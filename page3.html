@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<!--refrenced https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial-->
+<head>  
+<style>
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background-size: 200px;
+  background-color: white;
+  font-family: "Courier New";
+  font-size: 1.2em;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.one {
+  background: url("background/forest3%20empty.png");
+  background-size: auto 100vh; min-height: 20%;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+.two {
+  background: url("background/forest3%20empty.png");
+  background-size: auto 100vh; min-height: 20%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-color: white;
+}
+.three {
+  background: url("background/forest3%20empty.png");
+  background-size: auto 100vh; min-height: 20%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-color: white;
+}
+.four {
+  background: url("background/forest3%20empty.png");
+  background-size: auto 100vh; min-height: 20%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-color: white;
+}
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display:none;
+}
+        
+#logo
+{ 
+  max-width: 70vw;
+  width: auto;
+  height: auto;
+  max-height: 100vh;
+}
+    
+#guitar
+{ position: absolute; left:12.5%; top:45%;
+  display: block;
+  max-width: 138px;
+  max-height: 107px;
+}
+    
+#saxophone
+{ position: absolute; left:36%; top:25%;
+  display: block;
+  max-width: 138px;
+  max-height: 107px; 
+}
+
+#trombone
+{ position: absolute; left:60%; top:40%;
+  display: block;
+  max-width: 98px;
+  max-height: 67px; 
+}
+    
+#violin
+{ position: absolute; left:90%; top:65%;
+  display: block;
+  max-width: 138px;
+  max-height: 107px; 
+}
+
+a.p1
+{ position: absolute; left:9%; top:75%;
+  display: block;
+  z-index: 1;  
+}
+    
+a.p2
+{ position: absolute; left:36%; top:50%;
+  display: block;
+  z-index: 1;  
+}
+
+a.p3
+{ position: absolute; left:60%; top:20%;
+  display: block;
+  z-index: 1;  
+}
+
+a.p4
+{ position: absolute; left:90%; top:45%;
+  display: block;
+  z-index: 1;  
+}
+    
+a
+{font-family: "Courier New";
+ font-size: 1.4em;
+}
+    
+</style>
+</head>
+  
+<body>
+    <div class="outer-wrapper">
+    <div class="wrapper">
+        
+    <div id="banner">
+    <img src="background/wanderinginthefamiliarunfamiliar.png" id="logo"/>
+    </div>
+        
+    <div class="slide one">
+    <a class=p1 style="color:saddlebrown" > <pre>How deep does this forest go?</pre></a>    
+    </div>
+    <div class="slide two">
+    <a class=p2 style="color:goldenrod" > <pre>I used to play this</pre></a> 
+    </div>
+    <div class="slide three">
+    <a class=p3 style="color:orange" > <pre>Never seen this before</pre></a>
+    </div>
+    <div class="slide four">
+    <a class=p4 style="color:brown" > <pre>This is not familiar</pre></a>
+    </div>
+    <div id="#instruments">
+    
+    <a href="index.html">
+    <img id="guitar" src="instruments/guitar.png"/></a>
+    
+   
+    <a href="page4.html">
+    <img id="saxophone" src="instruments/saxophone.png"/></a>
+    
+    
+    <a href="page2.html">
+    <img id="trombone" src="instruments/trombone.png"/></a>
+
+    <a href="page3.html">
+    <img id="violin" src="instruments/violin.png"/></a>
+    
+    
+    </div>
+    </div>
+    </div>
+      
+    
+</body>
+</html>
